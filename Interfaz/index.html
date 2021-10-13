@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle><h1>Reto 2</h1></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myFunctions.js"></script>
+    </head>
+
+    <body>
+        <h2>Interfaz Doctor</h2>
+        <div id="doctores"></div> 
+        <div>
+            <input type="number" id="idDoctor" placeholder="id">
+            <input type="text" id="specialty" placeholder="specialty">
+            <input type="number" id="graduate_year" placeholder="graduate_year">
+            <input type="number" id="department_id" placeholder="department_id">   
+            <input type="text"   id="nameDoctor" placeholder="name">      
+        </div>
+        <button onclick="getDoctor()">Consultar</button>
+        <button onclick="postDoctor()">Guardar</button>
+        <button onclick="putDoctor()">Actualizar</button>
+
+        <h2>Interfaz Cliente</h2>
+        <div id="clientes"></div> 
+        <div>
+            <input type="number" id="idClient" placeholder="id">
+            <input type="text" id="nameClient" placeholder="name">
+            <input type="text" id="email" placeholder="email">
+            <input type="number" id="age" placeholder="age">            
+        </div>
+        <button onclick="getClient()">Consultar</button>
+        <button onclick="postClient()">Guardar</button>
+        <button onclick="putClient()">Actualizar</button>
+
+        <h2>Interfaz Mensaje</h2>
+        <div id="mensajes"></div> 
+        <div>
+            <input type="number" id="idMessage" placeholder="id">
+            <input type="text" id="messagetext" placeholder="messagetext">           
+        </div>
+        <button onclick="getMessage()">Consultar</button>
+        <button onclick="postMessage()">Guardar</button>
+        <button onclick="putMessage()">Actualizar</button>
+    </body>
+</html>
